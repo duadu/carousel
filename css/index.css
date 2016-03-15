@@ -1,0 +1,70 @@
+@charset 'utf-8';
+html, body {
+	height: 100%;
+	overflow: hidden;  /*去除滚动条，否则上下滚动翻页时会出错*/
+}
+/*#carousel {
+	width: 400%;
+}*/
+#carousel, .imgs {
+	position: relative;
+	height: 100%;
+}
+.img {
+	/*width: 25%;*/
+	height: 100%;
+}
+.img0 {
+	background: url(../img/1.jpg) no-repeat center #000;
+	background-size: cover;
+}
+.img1 {
+	background: url(../img/2.jpg) no-repeat center #000;
+	background-size: cover;
+}
+.img2 {
+	background: url(../img/3.jpg) no-repeat center #000;
+	background-size: cover;
+}
+.img3 {
+	background: url(../img/4.jpg) no-repeat center #000;
+	background-size: cover;
+}
+.page {
+	position: fixed;
+	height: 10px;
+}
+.horizontal {
+	bottom: 50px; 
+	left: 50%;
+	margin: 0 0 0 -25px;
+}
+.vertical {
+	top: 50%;
+	right: 30px;
+	margin: -5px 0 0 0;
+}
+.page li {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	box-shadow: 0 0 5px 1px #000;
+	background: #fff;
+}
+.horizontal li {
+	float: left;
+	margin: 0 20px 0 0;
+}
+.vertical li {
+	margin:  0 0 20px 0;
+}
+.page .active {
+	background: transparent;
+	border: 3px solid #fff;
+}
+.horizontal .active {
+	margin: -3px 20px 0 0;
+}
+.vertical .active {
+	margin: 0 0 20px -3px;
+}
